@@ -17,8 +17,8 @@
     <link rel="stylesheet" href="style/toggle.css">
 
     <!--[if lt IE 9]>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-        <script src="compat.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <script src="compat.js"></script>
     <![endif]-->
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -29,45 +29,62 @@
       gtag('js', new Date());
 
       gtag('config', 'UA-106565390-3');
+
     </script>
 
 </head>
 
 <body>
-    <div id="cceasier-tool" style="width:100%;">
-        <a class="list" href="javascript:0;"> <div class="list-container"> <div class="list-title" style="color:green;">Easier CC Banner Course Scheduler</div> <div class="list-description" id="list-description" style="color:green;">Scheduling courses has never been easier.</div> </div> </a>
-        <textarea rows=5 style="width:50%;resize:none;" spellcheck="false" id="course_pool" placeholder="Search with course code, course name or professor name."></textarea>
-        <button id='course_pool_confirm' style="position: relative; z-index: 0;"><img src="img/arrow.png"></img> </button>
-        <br><br>
-        <div id="is_freshman_container"><input type="checkbox" id="is_freshman"><label for="is_freshman">I am a freshman.</label></div>
-        
-    </div>
-    <div data-remodal-id="result_modal">
-        <button data-remodal-action="close" class="remodal-close"></button>
-        <div id='result_modal_container'>
-            
-            <table border=true id="result_modal_table">
-                <tbody></tbody>
-            </table>
-            <button id="btn_export"></button>
-            <div class="modal-legend">
-                <div class="modal-course-id course-select"><abbr title="Course ID: Click it to mark courses">EX101</abbr></div>
-                <div class="modal-course-name"><abbr title="Course title: Click it to open the course catalog class page">Example</abbr></div>
-                <div class="modal-course-info1"><abbr title="Name of professor teaching the class">Professor</abbr></div>
-                <div class="modal-course-info1"><abbr title="Open spots left (freshman students also have reserved spots available for them)">Available</abbr>/<abbr title="Current class size without including freshman students (We understand the confusion, but we are sticking to the Banner Course Schedule wording)">Class Size</abbr></div>
-                
-                <div class="modal-course-info2">(<abbr title="Number of people on the waitlist">WL</abbr>, <abbr title="Spots reserved for freshman students">Reserved</abbr>)</div>
+<div id="cceasier-tool" style="width:100%;">
+    <a class="list" href="javascript:0;">
+        <div class="list-container">
+            <div class="list-title" style="color:green;">Easier CC Banner Course Scheduler</div>
+            <div class="list-description" id="list-description" style="color:green;">Scheduling courses has never been
+                easier.
+            </div>
+        </div>
+    </a>
+    <textarea rows=5 style="width:50%;resize:none;" spellcheck="false" id="course_pool"
+              placeholder="Search with course code, course name or professor name."></textarea>
+    <button id='course_pool_confirm' style="position: relative; z-index: 0;"><img src="img/arrow.png"/></button>
+    <br><br>
+    <div id="is_freshman_container"><input type="checkbox" id="is_freshman"><label for="is_freshman">I am a
+        freshman.</label></div>
+
+</div>
+<div data-remodal-id="result_modal">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    <div id='result_modal_container'>
+
+        <table border=true id="result_modal_table">
+            <tbody></tbody>
+        </table>
+        <button id="btn_export"></button>
+        <div class="modal-legend">
+            <div class="modal-course-id course-select"><abbr title="Course ID: Click it to mark courses">EX101</abbr>
+            </div>
+            <div class="modal-course-name"><abbr title="Course title: Click it to open the course catalog class page">Example</abbr>
+            </div>
+            <div class="modal-course-info1"><abbr title="Name of professor teaching the class">Professor</abbr></div>
+            <div class="modal-course-info1"><abbr
+                    title="Open spots left (freshman students also have reserved spots available for them)">Available</abbr>/<abbr
+                    title="Current class size without including freshman students (We understand the confusion, but we are sticking to the Banner Course Schedule wording)">Class
+                Size</abbr></div>
+
+            <div class="modal-course-info2">(<abbr title="Number of people on the waitlist">WL</abbr>, <abbr
+                    title="Spots reserved for freshman students">Reserved</abbr>)
             </div>
         </div>
     </div>
-    <label id="copyright">By Han You &amp; Kon Aoki. <a href="mailto:easierccbanner@gmail.com" style="color:#2196F3;">Contact.</a></label>
+</div>
+<label id="copyright">By Han You &amp; Kon Aoki. <a href="mailto:easierccbanner@gmail.com" style="color:#2196F3;">Contact.</a></label>
 
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/textcomplete.min.js"></script>
-    <script src="js/fuse.min.js"></script>
-    <script src="js/keymaster.min.js"></script>
-    <script src="js/remodal.min.js"></script>
-    <script src="js/compat.js"></script>
-    <script src="js/main.js"></script>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/textcomplete.min.js"></script>
+<script src="js/fuse.min.js"></script>
+<script src="js/keymaster.min.js"></script>
+<script src="js/remodal.min.js"></script>
+<script src="js/compat.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
