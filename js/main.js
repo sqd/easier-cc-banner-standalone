@@ -14,7 +14,7 @@ function show_modal_window(schedule) {
     //preprocess data
     {
         //sieve out duplicated courses
-        var courses = $('#course_pool').val().split(',');
+        var courses = $('#course_pool').val().toUpperCase().split(',');
         var hash = {};
         $.each(courses, function () { hash[this] = true; });
         courses = [];
@@ -184,7 +184,6 @@ function on_tool_loaded(){
         mimeType: "application/json",
         success: function(schedule){
             var schedule_url = null;
-            $('a').each(function(){ if(this.href.toString().endsWith('P_CrseSchdDetl')) schedule_url = this.href; });
             on_schedule_loaded(schedule);
         }
     });
