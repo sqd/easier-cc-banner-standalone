@@ -275,6 +275,9 @@ function on_schedule_loaded(schedule) {
         key('ctrl+enter', function () {
             if ($('#course_pool').is(':focus')) show_modal_window(schedule);
         });
+        key('enter', function () {
+            if ($('#course_pool').is(':focus')) show_modal_window(schedule);
+        });
         key.filter = ev => true;
     }
 }
